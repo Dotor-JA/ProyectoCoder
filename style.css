@@ -1,0 +1,111 @@
+/*
+!important = apica a las propiedades y pisa todo orden -jerarquico-
+
+ID: unico e irrepetible / ej: dni 
+class= Se pueden repetir y utilizar + de 1 vez
+
+etiquetas/selectores; etiquetas semanticas del html
+
+*/
+
+/*selector/id/clase {
+    propiedad: valor;
+}*/
+/* LLAMADO AL DOC HTML*/
+/* ESTILOS RESET CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    max-width: 1920px;
+}
+
+
+#body {
+    max-width: 1920px;
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+    background-color: #00B2A9;
+    position: fixed;
+}
+
+#navBar {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.navBar a {
+    text-align: center;
+}
+
+#navBar a {
+    color: black;
+    display: inline;
+    width: 60px;
+    height: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+#main {
+    text-align: center;
+    width: 100%;
+}
+
+#main .banner-marcas {
+    width: 50%;
+    height: 150px;
+    background-image: url(Images/baner-marcas.PNG);
+    padding-top: 50px;
+}
+
+
+#main picture img {
+    display: block;
+    margin: 0 auto;
+}
+
+#main h1 {
+    color: #080881;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.vidmain {
+    display: grid;
+    width: 1920px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.quienes__somos {
+    background-color: red;
+    color: black !important;
+}
+
+.acerca__de {
+    background-color: red;
+    color: black !important;
+}
+
+#footer {
+    color: black;
+    background-color: #00B2A9;
+    display: flex;
+}
+
+.datos-links-autor {
+    width: 100%;
+    text-align: center;
+}
+.footer-brands {
+    text-align: center;
+}
+
+#footer a h3 {
+    color: black;
+}
