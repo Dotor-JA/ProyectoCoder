@@ -25,6 +25,11 @@ etiquetas/selectores; etiquetas semanticas del html
 
 #body {
     max-width: 1920px;
+    background-color:honeydew
+}
+.marcas {
+    display: flex;
+    
 }
 
 #header {
@@ -34,15 +39,7 @@ etiquetas/selectores; etiquetas semanticas del html
     position: fixed;
 }
 
-#navBar {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
 
-.navBar a {
-    text-align: center;
-}
 
 #navBar a {
     color: black;
@@ -50,6 +47,9 @@ etiquetas/selectores; etiquetas semanticas del html
     width: 60px;
     height: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.container-fluid {
+    background-color: #00B2A9;
 }
 
 #main {
@@ -78,7 +78,6 @@ etiquetas/selectores; etiquetas semanticas del html
 
 .vidmain {
     display: grid;
-    width: 1920px;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -91,6 +90,23 @@ etiquetas/selectores; etiquetas semanticas del html
     background-color: red;
     color: black !important;
 }
+
+.containerMarcas {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 1px 1px; 
+    grid-template-areas: 
+    "anycubic-Logo artillery-Logo"
+    "creality-logo hellbot-logo"
+    "prusa-logo prusa-logo"; 
+}
+
+.anycubic-Logo { grid-area: anycubic-Logo;}
+.artillery-Logo { grid-area: artillery-Logo; }
+.creality-logo { grid-area: creality-logo; }
+.hellbot-logo { grid-area: hellbot-logo; }
+.prusa-logo { grid-area: prusa-logo; }
 
 #footer {
     color: black;
