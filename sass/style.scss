@@ -163,6 +163,9 @@ button:hover {
 .prusa-logo { grid-area: prusa-logo; }
 
 #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     color: black;
     background-color: #00B2A9;
     text-align: center;
@@ -171,6 +174,34 @@ button:hover {
     width: 100%;
     font-family: Arial, sans-serif;
 }
+
+.section__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.h2__footer {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.buttons__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#footer button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+
 footer p {
     margin: 0;
     font-size: 14px;
@@ -186,4 +217,29 @@ footer span:hover {
     color: #FFDF00;
 }
 
+/* Para teléfonos (0 - 300 px) */
+@media (max-width: 300px) {
+    .vidman {
+        /* Estilos para teléfonos */
+        font-size: 14px;
+        padding: 10px;
+    }
+}
 
+/* Para tabletas (300 - 800 px) */
+@media (min-width: 301px) and (max-width: 800px) {
+    .vidman {
+        /* Estilos para tabletas */
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+/* Para escritorios (800 - 1400 px) */
+@media (min-width: 801px) and (max-width: 1400px) {
+    .vidman {
+        /* Estilos para escritorios */
+        font-size: 18px;
+        padding: 20px;
+    }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 !important = apica a las propiedades y pisa todo orden -jerarquico-
 
@@ -13,184 +14,238 @@ etiquetas/selectores; etiquetas semanticas del html
 /* LLAMADO AL DOC HTML*/
 /* ESTILOS RESET CSS*/
 * {
-margin: 0;
-padding: 0;
-list-style: none;
-text-decoration: none;
-box-sizing: border-box;
-max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  max-width: 1920px;
 }
 
 #body {
-max-width: 1920px;
-background-color: honeydew;
+  max-width: 1920px;
+  background-color: honeydew;
 }
 
 .marcas {
-display: flex;
+  display: flex;
 }
 
 #header {
-width: 100%;
-height: 50px;
-background-color: #00B2A9;
-position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #00B2A9;
+  position: fixed;
 }
 
 #navBar a {
-color: black;
-display: inline;
-width: 60px;
-height: 60px;
-font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  display: inline;
+  width: 60px;
+  height: 60px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .container-fluid {
-background-color: #00B2A9;
+  background-color: #00B2A9;
 }
 
 #main {
-text-align: center;
-width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 #main .banner-marcas {
-width: 50%;
-height: 150px;
-background-image: url(Images/baner-marcas.PNG);
-padding-top: 50px;
+  width: 50%;
+  height: 150px;
+  background-image: url(Images/baner-marcas.PNG);
+  padding-top: 50px;
 }
 
 #main picture img {
-display: block;
-margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #main h1 {
-color: #080881;
-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-text-align: center;
+  color: #080881;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
 .contact-form {
-background-color: #ffffff;
-padding: 20px;
-border-radius: 8px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-width: 300px;
-text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
 }
 
 .contact-form h1 {
-margin-bottom: 20px;
-color: #333;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 .form-group {
-margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 label {
-display: block;
-margin-bottom: 8px;
-font-size: 14px;
-color: #555;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
 }
 
 input[type=text],
 input[type=email],
 textarea {
-width: 100%;
-padding: 10px;
-font-size: 14px;
-border: 1px solid #ccc;
-border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 textarea {
-resize: vertical;
+  resize: vertical;
 }
 
 button {
-padding: 10px 15px;
-background-color: black;
-color: white;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-font-size: 16px;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-background-color: #00B2A9;
+  background-color: #00B2A9;
 }
 
 .vidmain {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .quienes__somos {
-background-color: red;
-color: black !important;
+  background-color: red;
+  color: black !important;
 }
 
 .acerca__de {
-background-color: red;
-color: black !important;
+  background-color: red;
+  color: black !important;
 }
 
 .containerMarcas {
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
-gap: 1px 1px;
-grid-template-areas: "anycubic-Logo artillery-Logo" "creality-logo hellbot-logo" "prusa-logo prusa-logo";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "anycubic-Logo artillery-Logo" "creality-logo hellbot-logo" "prusa-logo prusa-logo";
 }
 
 .anycubic-Logo {
-grid-area: anycubic-Logo;
+  grid-area: anycubic-Logo;
 }
 
 .artillery-Logo {
-grid-area: artillery-Logo;
+  grid-area: artillery-Logo;
 }
 
 .creality-logo {
-grid-area: creality-logo;
+  grid-area: creality-logo;
 }
 
 .hellbot-logo {
-grid-area: hellbot-logo;
+  grid-area: hellbot-logo;
 }
 
 .prusa-logo {
-grid-area: prusa-logo;
+  grid-area: prusa-logo;
 }
 
 #footer {
-color: black;
-background-color: #00B2A9;
-text-align: center;
-padding: 20px 0;
-bottom: 0;
-width: 100%;
-font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+  background-color: #00B2A9;
+  text-align: center;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.section__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.h2__footer {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.buttons__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#footer button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
 }
 
 footer p {
-margin: 0;
-font-size: 14px;
+  margin: 0;
+  font-size: 14px;
 }
 
 footer span {
-font-weight: bold;
-color: #FFD700; /* Dorado */
+  font-weight: bold;
+  color: #FFD700; /* Dorado */
 }
 
 /* Hover effect para el texto */
 footer span:hover {
-color: #FFDF00;
+  color: #FFDF00;
+}
+
+/* Para teléfonos (0 - 300 px) */
+@media (max-width: 300px) {
+  .vidman {
+    /* Estilos para teléfonos */
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+/* Para tabletas (300 - 800 px) */
+@media (min-width: 301px) and (max-width: 800px) {
+  .vidman {
+    /* Estilos para tabletas */
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+/* Para escritorios (800 - 1400 px) */
+@media (min-width: 801px) and (max-width: 1400px) {
+  .vidman {
+    /* Estilos para escritorios */
+    font-size: 18px;
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
