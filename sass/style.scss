@@ -122,11 +122,6 @@ button:hover {
 }
 
 
-.vidmain {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
 .quienes__somos {
     background-color: red;
     color: black !important;
@@ -143,13 +138,13 @@ button:hover {
     grid-template-rows: 1fr 1fr 1fr; 
     gap: 1px 1px; 
     grid-template-areas: 
-    "anycubic-Logo artillery-Logo"
+    "anycubic-logo artillery-logo"
     "creality-logo hellbot-logo"
     "prusa-logo prusa-logo"; 
 }
 
-.anycubic-Logo { grid-area: anycubic-Logo;}
-.artillery-Logo { grid-area: artillery-Logo; }
+.anycubic-logo { grid-area: anycubic-logo;}
+.artillery-logo { grid-area: artillery-logo; }
 .creality-logo { grid-area: creality-logo; }
 .hellbot-logo { grid-area: hellbot-logo; }
 .prusa-logo { grid-area: prusa-logo; }
