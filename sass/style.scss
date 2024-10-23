@@ -29,7 +29,7 @@ etiquetas/selectores; etiquetas semanticas del html
 }
 .marcas {
     display: flex;
-    
+    flex-wrap: wrap;
 }
 
 #header {
@@ -164,6 +164,7 @@ button:hover {
 
 #footer {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     color: black;
