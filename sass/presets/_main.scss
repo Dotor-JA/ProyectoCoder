@@ -1,0 +1,148 @@
+#body {
+    max-width: 1920px;
+    background-color:honeydew
+}
+.marcas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+#main {
+    text-align: center;
+    width: 100%;
+}
+
+#main .banner-marcas {
+    width: 50%;
+    height: 150px;
+    background-image: url(Images/baner-marcas.PNG);
+    padding-top: 50px;
+}
+
+
+#main picture img {
+    display: block;
+    margin: 0 auto;
+}
+
+#main h1 {
+    color: #080881;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.contact-form h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 15px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color:#00B2A9;
+}
+
+
+
+
+.quienes__somos {
+    background-color: red;
+    color: black !important;
+}
+
+.acerca__de {
+    background-color: red;
+    color: black !important;
+}
+
+.containerMarcas {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 1px 1px; 
+    grid-template-areas: 
+    "anycubic-logo artillery-logo"
+    "creality-logo hellbot-logo"
+    "prusa-logo prusa-logo"; 
+}
+
+.anycubic-logo { grid-area: anycubic-logo;}
+.artillery-logo { grid-area: artillery-logo; }
+.creality-logo { grid-area: creality-logo; }
+.hellbot-logo { grid-area: hellbot-logo; }
+.prusa-logo { grid-area: prusa-logo; }
+
+
+
+
+
+/* Para teléfonos (0 - 300 px) */
+@media (max-width: 300px) {
+    .vidman {
+        /* Estilos para teléfonos */
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Para tabletas (300 - 800 px) */
+@media (min-width: 301px) and (max-width: 800px) {
+    .vidman {
+        /* Estilos para tabletas */
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+/* Para escritorios (800 - 1400 px) */
+@media (min-width: 801px) and (max-width: 1400px) {
+    .vidman {
+        /* Estilos para escritorios */
+        font-size: 18px;
+        padding: 20px;
+    }
+}

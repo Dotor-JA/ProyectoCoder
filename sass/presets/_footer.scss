@@ -1,0 +1,53 @@
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+    background-color: #00B2A9;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.section__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.h2__footer {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.buttons__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#footer button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer span {
+    font-weight: bold;
+    color: #FFD700; /* Dorado */
+}
+
+/* Hover effect para el texto */
+footer span:hover {
+    color: #FFDF00;
+}

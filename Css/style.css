@@ -1,35 +1,55 @@
 @charset "UTF-8";
-/*
-!important = apica a las propiedades y pisa todo orden -jerarquico-
-
-ID: unico e irrepetible / ej: dni 
-class= Se pueden repetir y utilizar + de 1 vez
-
-etiquetas/selectores; etiquetas semanticas del html
-
-*/
-/*selector/id/clase {
-    propiedad: valor;
-}*/
-/* LLAMADO AL DOC HTML*/
-/* ESTILOS RESET CSS*/
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  max-width: 1920px;
-}
-
-#body {
-  max-width: 1920px;
-  background-color: honeydew;
-}
-
-.marcas {
+#footer {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+  background-color: #00B2A9;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.section__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.h2__footer {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.buttons__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#footer button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer span {
+  font-weight: bold;
+  color: #FFD700; /* Dorado */
+}
+
+/* Hover effect para el texto */
+footer span:hover {
+  color: #FFDF00;
 }
 
 #header {
@@ -41,6 +61,16 @@ etiquetas/selectores; etiquetas semanticas del html
 
 .container-fluid {
   background-color: #00B2A9;
+}
+
+#body {
+  max-width: 1920px;
+  background-color: honeydew;
+}
+
+.marcas {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #main {
@@ -157,59 +187,6 @@ button:hover {
   grid-area: prusa-logo;
 }
 
-#footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  color: black;
-  background-color: #00B2A9;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-}
-
-.section__footer {
-  display: flex;
-  flex-direction: column;
-}
-
-.h2__footer {
-  margin: 0 0 10px;
-  font-size: 18px;
-}
-
-.buttons__footer {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-#footer button {
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  width: 100%;
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
-}
-
-footer span {
-  font-weight: bold;
-  color: #FFD700; /* Dorado */
-}
-
-/* Hover effect para el texto */
-footer span:hover {
-  color: #FFDF00;
-}
-
 /* Para teléfonos (0 - 300 px) */
 @media (max-width: 300px) {
   .vidman {
@@ -233,6 +210,14 @@ footer span:hover {
     font-size: 18px;
     padding: 20px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  max-width: 1920px;
 }
 
 /*# sourceMappingURL=style.css.map */
