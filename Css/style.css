@@ -9,42 +9,46 @@
   text-align: center;
   bottom: 0;
   width: 100%;
+  padding: 10px 0;
 }
 
 .section__footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .h2__footer {
-  margin: 0 0 10px;
-  font-size: 18px;
+  margin: 0 0 5px;
+  font-size: 20px;
 }
 
 .buttons__footer {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
 }
 
 #footer button {
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px;
+  padding: 6px;
+  font-size: 15px;
   cursor: pointer;
   transition: background-color 0.3s;
   width: 100%;
 }
 
 footer p {
-  margin: 0;
-  font-size: 14px;
+  margin: 5px 0;
+  font-size: 12px;
 }
 
 footer span {
   font-weight: bold;
   color: #FFD700; /* Dorado */
+  font-size: 12px;
 }
 
 /* Hover effect para el texto */
@@ -187,30 +191,6 @@ button:hover {
   grid-area: prusa-logo;
 }
 
-/* Para teléfonos (0 - 300 px) */
-@media (max-width: 300px) {
-  .vidman {
-    /* Estilos para teléfonos */
-    font-size: 14px;
-    padding: 10px;
-  }
-}
-/* Para tabletas (300 - 800 px) */
-@media (min-width: 301px) and (max-width: 800px) {
-  .vidman {
-    /* Estilos para tabletas */
-    font-size: 16px;
-    padding: 15px;
-  }
-}
-/* Para escritorios (800 - 1400 px) */
-@media (min-width: 801px) and (max-width: 1400px) {
-  .vidman {
-    /* Estilos para escritorios */
-    font-size: 18px;
-    padding: 20px;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -218,6 +198,31 @@ button:hover {
   text-decoration: none;
   box-sizing: border-box;
   max-width: 1920px;
+}
+
+/* Para teléfonos (0 - 300 px)Videos main */
+@media (max-width: 300px) {
+  .vidman {
+    /* Estilos para teléfonos */
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+/* Para tabletas (300 - 800 px)Videos main  */
+@media (min-width: 301px) and (max-width: 800px) {
+  .vidman {
+    /* Estilos para tabletas */
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+/* Para escritorios (800 - 1400 px) Videos main */
+@media (min-width: 801px) and (max-width: 1400px) {
+  .vidman {
+    /* Estilos para escritorios */
+    font-size: 18px;
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

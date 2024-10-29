@@ -1,4 +1,5 @@
-@import "presets/footer";
-@import "presets/header";
-@import "presets/main";
-@import "presets/reset";
+@use "presets/footer";
+@use "presets/header";
+@use "presets/main";
+@use "presets/reset";
+@use "presets/queries";
