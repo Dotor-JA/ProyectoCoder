@@ -3,14 +3,15 @@
     background-color:honeydew
 }
 
-
 #main {
     text-align: center;
     width: 100%;
 }
 
-#main .banner-marcas {
-    width: 50%;
+.banner-marcas {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
     height: 150px;
     background-image: url(Images/baner-marcas.PNG);
     padding-top: 50px;
@@ -29,6 +30,12 @@
 }
 
 //**Pages Contacto Formulario**//
+.contact-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
 .contact-form {
     background-color: #ffffff;
     padding: 20px;
