@@ -2,11 +2,6 @@
     max-width: 1920px;
     background-color:honeydew
 }
-.marcas {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 
 
 #main {
@@ -33,6 +28,7 @@
     text-align: center;
 }
 
+//**Pages Contacto Formulario**//
 .contact-form {
     background-color: #ffffff;
     padding: 20px;
@@ -86,7 +82,7 @@ button:hover {
     background-color:#00B2A9;
 }
 
-
+//**Finalizacion Pages Contacto Formulario**//
 
 
 .quienes__somos {
@@ -99,21 +95,40 @@ button:hover {
     color: black !important;
 }
 
-.containerMarcas {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 1px 1px; 
-    grid-template-areas: 
-    "anycubic-logo artillery-logo"
-    "creality-logo hellbot-logo"
-    "prusa-logo prusa-logo"; 
+//*Botones de Marcas izquierda sobre los grids**//
+
+.marcasButton {
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    float: left;  /* Alinea a la izquierda */
+    margin: 20px; /* Espacio alrededor del div */
 }
 
-.anycubic-logo { grid-area: anycubic-logo;}
-.artillery-logo { grid-area: artillery-logo; }
-.creality-logo { grid-area: creality-logo; }
-.hellbot-logo { grid-area: hellbot-logo; }
-.prusa-logo { grid-area: prusa-logo; }
 
+//**Grids sobre marcas e informacion**//
+
+.containerMarcas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+}
+
+.marca {
+    background: #f9f9f9; 
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 8px; 
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animaciones */
+    overflow: hidden; /* Evitar que se desborde el contenido */
+}
+
+.marca:hover {
+    transform: scale(1.05); /* Aumentar el tamaño al pasar el mouse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.marca img {
+    max-width: 100%; 
+    height: auto; 
+}
 

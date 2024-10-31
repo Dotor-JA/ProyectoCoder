@@ -72,11 +72,6 @@ footer span:hover {
   background-color: honeydew;
 }
 
-.marcas {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 #main {
   text-align: center;
   width: 100%;
@@ -163,32 +158,36 @@ button:hover {
   color: black !important;
 }
 
+.marcasButton {
+  width: 200px; /* Ajusta el ancho según sea necesario */
+  float: left; /* Alinea a la izquierda */
+  margin: 20px; /* Espacio alrededor del div */
+}
+
 .containerMarcas {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "anycubic-logo artillery-logo" "creality-logo hellbot-logo" "prusa-logo prusa-logo";
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-.anycubic-logo {
-  grid-area: anycubic-logo;
+.marca {
+  background: #f9f9f9;
+  border: 1px solid #ddd; /* Borde */
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Animaciones */
+  overflow: hidden; /* Evitar que se desborde el contenido */
 }
 
-.artillery-logo {
-  grid-area: artillery-logo;
+.marca:hover {
+  transform: scale(1.05); /* Aumentar el tamaño al pasar el mouse */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
-.creality-logo {
-  grid-area: creality-logo;
-}
-
-.hellbot-logo {
-  grid-area: hellbot-logo;
-}
-
-.prusa-logo {
-  grid-area: prusa-logo;
+.marca img {
+  max-width: 100%;
+  height: auto;
 }
 
 * {
