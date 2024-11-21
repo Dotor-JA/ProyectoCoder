@@ -78,16 +78,13 @@ footer span:hover {
 }
 
 .banner-marcas {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 150px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
   background-image: url(Images/baner-marcas.PNG);
   padding-top: 50px;
-}
-
-#main picture img {
-  display: block;
   margin: 0 auto;
 }
 
@@ -98,7 +95,8 @@ footer span:hover {
 }
 
 .contact-container {
-  display: flex;
+  display: block;
+  justify-items: center;
   align-items: center; /* Centra verticalmente */
   height: 100vh; /* Ocupa toda la altura de la ventana */
 }
@@ -229,6 +227,82 @@ button:hover {
     /* Estilos para escritorios */
     font-size: 18px;
     padding: 20px;
+  }
+}
+/* Para pantallas grandes (desktops y laptops) */
+@media (min-width: 1024px) {
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .section__footer {
+    width: 23%; /* Cuatro columnas */
+    padding: 10px;
+  }
+  .buttons__footer {
+    flex-direction: column;
+  }
+  .buttons__footer button {
+    width: 100%; /* Los botones ocupan todo el ancho en pantallas grandes */
+  }
+}
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1024px) and (min-width: 600px) {
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .section__footer {
+    width: 48%; /* Dos columnas */
+  }
+  .buttons__footer {
+    flex-direction: column;
+  }
+  .buttons__footer button {
+    width: 100%;
+  }
+}
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 599px) {
+  #footer {
+    display: block; /* En móviles, todos los elementos se apilan */
+  }
+  .section__footer {
+    width: 100%; /* Las secciones ocupan todo el ancho */
+    padding: 10px;
+  }
+  .buttons__footer {
+    flex-direction: column;
+  }
+  .buttons__footer button {
+    width: 100%;
+  }
+  footer p {
+    font-size: 0.75rem;
+  }
+}
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .marca {
+    width: calc(50% - 20px); /* Dos marcas por fila */
+  }
+}
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 599px) {
+  .containerMarcas {
+    padding: 10px; /* Reducir el padding en pantallas pequeñas */
+  }
+  .marca {
+    width: 100%; /* Una marca por fila */
+    margin-bottom: 20px; /* Espacio entre marcas */
+  }
+  .marca h3 {
+    font-size: 1rem; /* Reducir el tamaño de los encabezados en móviles */
+  }
+  .marca p {
+    font-size: 0.75rem; /* Reducir el tamaño del texto en móviles */
   }
 }
 

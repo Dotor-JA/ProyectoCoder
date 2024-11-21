@@ -9,19 +9,16 @@
 }
 
 .banner-marcas {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 150px;
+    display: block;
+    justify-content: center; 
+    align-items: center; 
+    max-width: 100%;
+    height: auto;
     background-image: url(Images/baner-marcas.PNG);
     padding-top: 50px;
-}
-
-
-#main picture img {
-    display: block;
     margin: 0 auto;
 }
+
 
 #main h1 {
     color: #080881;
@@ -31,7 +28,8 @@
 
 //**Pages Contacto Formulario**//
 .contact-container {
-    display: flex;
+    display: block;
+    justify-items: center;
     align-items: center; /* Centra verticalmente */
     height: 100vh; /* Ocupa toda la altura de la ventana */
 }
